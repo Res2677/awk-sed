@@ -1,0 +1,1 @@
+samtools view pbalign.tasks.pbalign-7/mapped.alignmentset.bam|awk '{print $3}'|awk '{a[$i]++}END{for (i in a){print i,a[i]}}'
